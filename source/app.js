@@ -1,3 +1,5 @@
+let NoteID = 1;
+
 function fetch() {
     let newTask = document.getElementById("data").value;
     localStorage.setItem("Tasks", newTask);
@@ -6,6 +8,6 @@ function fetch() {
     document.getElementById('default').textContent = "";
     let container = document.querySelector(".update");
     let AppendNote = document.createElement('p');
-    AppendNote.textContent = data;
+    AppendNote.textContent = data + "| Note ID: " + NoteID;
     container.appendChild(AppendNote);
 };
