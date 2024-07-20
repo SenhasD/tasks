@@ -3,7 +3,6 @@ let noteRef = 1;
 function fetch() {
     let newTask = document.getElementById("data").value;
     localStorage.setItem("Tasks", newTask);
-    alert("New Todo Added");
     let data = localStorage.getItem("Tasks");
     document.getElementById('default').textContent = "";
     let container = document.querySelector(".update");
