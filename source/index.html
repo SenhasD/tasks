@@ -9,13 +9,15 @@
         <nav>
             <a href="https://github.com/SenhasD/tasks/tree/v0.1">Contribute</a>
         </nav>
-    <div class="container"><p class="header">TODO app</p></div>
+    <div class="container"><p class="header">TODO app</p><br /><p>Warning: refreshing the pages deletes all the tasks</p></div>
         <br />
         <br />
     <div class="update"><p id="default">No tasks still</p></div><br /><br />
     <p>Enter content of the task below: </p>
-    <div class="textarea"><input type="text" id="data"><br><br /></div>
+    <div class="textarea"><input type="text" id="data" required><br><br /></div>
     <button class="button" onclick="fetch()">Add Task</button><button class="button" onclick="delNote();">Delete a task</button>
+    <center><button  class="button" onclick="deleteRecent();">Clear recent history</button></center>
+    <center><button class="button" onclick="restoreTask()">Restore recently note</button></center>
     </body>
 
 </html>
